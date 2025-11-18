@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <title>LeakSentinel — Cybersecurity OSINT Scanner</title>
+
+  <!-- font-heading + Inter Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=font-heading:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=font-heading:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config (Dark Mode + Custom Theme) -->
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          fontFamily: {
+            font-heading: ["Space Grotesk", "sans-serif"],
+            inter: ["Inter", "sans-serif"]
+          },
+          colors: {
+            cyber: {
+              blue: "#128CFF",
+              navy: "#0A3D62"
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="/src/styles/globals.css">
+  <link rel="stylesheet" href="/src/styles/theme.css">
+
+</head>
+
+<body class="bg-white dark:bg-[#0B0D10] text-black dark:text-white transition-colors duration-300">
+
+  <!-- Root Mount -->
+  <div id="root"></div>
+
+  <!-- Entry Script -->
+  <script type="module" src="/src/main.jsx"></script>
+
+</body>
+</html>
