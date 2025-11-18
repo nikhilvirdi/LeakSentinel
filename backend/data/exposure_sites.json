@@ -1,0 +1,26 @@
+[
+  {
+    "username": "alex123",
+    "site": "peoplefinder.example",
+    "publicFields": ["phone", "city"],
+    "phone": "8887776666",
+    "email": "",
+    "url": "https://peoplefinder.example/alex123"
+  },
+  {
+    "username": "janedoe",
+    "site": "data-broker.example",
+    "publicFields": ["email", "address"],
+    "phone": "",
+    "email": "jane.doe@example.com",
+    "url": "https://data-broker.example/janedoe"
+  },
+  {
+    "username": "coolguy",
+    "site": "socialdump.example",
+    "publicFields": ["posts"],
+    "phone": "",
+    "email": "",
+    "url": "https://socialdump.example/coolguy"
+  }
+]

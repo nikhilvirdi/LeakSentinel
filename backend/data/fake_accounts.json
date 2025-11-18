@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Alex Smith",
+    "username": "alex123",
+    "source": "fakebook-clone",
+    "similarity": 0.92,
+    "url": "https://fakebook.example/alex123"
+  },
+  {
+    "name": "A Smith",
+    "username": "alex_smith",
+    "source": "old-social.example",
+    "similarity": 0.78,
+    "url": "https://old-social.example/alex_smith"
+  }
+]

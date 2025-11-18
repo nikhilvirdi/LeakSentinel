@@ -1,0 +1,23 @@
+[
+  {
+    "email": "alice@example.com",
+    "phone": "",
+    "breach": "ExampleBreach2023",
+    "leakedFields": ["password", "dob"],
+    "date": "2023-05-01"
+  },
+  {
+    "email": "victim@leakmail.com",
+    "phone": "9999999999",
+    "breach": "LeakDump2022",
+    "leakedFields": ["email","phone","name"],
+    "date": "2022-10-12"
+  },
+  {
+    "email": "testuser@example.org",
+    "phone": "",
+    "breach": "TestBreach2019",
+    "leakedFields": ["password"],
+    "date": "2019-08-05"
+  }
+]
