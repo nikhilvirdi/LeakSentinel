@@ -1,0 +1,100 @@
+/* Tailwind layers */
+body {
+  @apply font-body;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Font Setup */
+:root {
+  --font-heading: "font-heading", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+/* Heading utility */
+.heading {
+  font-family: var(--font-heading);
+}
+
+/* Body default */
+body, input, button, textarea {
+  font-family: var(--font-body);
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Apply dark mode smoothly */
+body {
+  @apply transition-colors duration-300 ease-in-out;
+}
+
+/* Global Smooth Hover & Click Effects */
+* {
+  @apply transition-all duration-200;
+}
+
+/* Remove default focus outlines */
+*:focus {
+  outline: none !important;
+}
+
+/* Custom Scrollbar (beautiful + minimal) */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.4);
+  border-radius: 4px;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Selection highlight */
+::selection {
+  background: #128CFF;
+  color: white;
+}
+
+/* Default page padding top (accounting for fixed navbar) */
+body {
+  padding-top: 0;
+}
+
+/* Cyber subtle grid (used in hero backgrounds later if needed) */
+.bg-cyber-grid {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px
+    );
+  background-size: 40px 40px;
+}
+
+html.dark .bg-cyber-grid {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px
+    );
+}
